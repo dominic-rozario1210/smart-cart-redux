@@ -1,16 +1,56 @@
-# React + Vite
+# 🛒 Smart Cart Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive shopping cart application built with React, Redux Toolkit, and React Router DOM.
 
-Currently, two official plugins are available:
+This project was created to practice managing application state with Redux Toolkit and handling page navigation with React Router.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🛍️ Display products
+- ➕ Add products to cart
+- ❌ Remove products directly from Product Cards
+- 🔢 Increase and decrease product quantity
+- 💰 Calculate individual product amount based on quantity
+- 🧾 Calculate total cart amount
+- 🛒 Display cart item count in the Header
+- 🔄 Add to Cart / Remove From Cart button changes dynamically
+- 📭 Empty cart message
+- 🧭 React Router navigation
+- ⬅️ Previous navigation from Cart page
+- 📱 Responsive layout
+- 🎨 Responsive product and cart UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- Redux Toolkit
+- React Redux
+- React Router DOM
+- JavaScript
+- HTML
+- CSS
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Banner.jsx
+│   └── ProductCard.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   └── Cart.jsx
+│
+├── redux/
+│   ├── Store.js
+│   └── CartSlice.js
+│
+├── data/
+│   └── productsData.json
+│
+├── App.jsx
+├── main.jsx
+└── App.css
