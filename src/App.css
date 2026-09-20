@@ -133,6 +133,9 @@ body {
   .nav-list{
     gap: 20px;
   }
+  .cart{
+    height: 120px;
+  }
   
 }
 @media (max-width:504px) {
@@ -141,6 +144,9 @@ body {
   }
   .cart-btn{
     padding:5px;
+  }
+  .cart{
+    width: 100%;
   }
   
 }
@@ -151,5 +157,6 @@ body {
     flex-direction: column;
     height:160px ;
   }
+  
   
 }
